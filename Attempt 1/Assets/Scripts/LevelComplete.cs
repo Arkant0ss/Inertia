@@ -3,8 +3,22 @@ using UnityEngine.SceneManagement;
 
 public class LevelComplete : MonoBehaviour
 {
-   public void LoadNextLevel()
+    private bool timeractive;
+    private void Start()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        timeractive = FindObjectOfType<TimeKeeper>().timeTrial;
+        if (timeractive != true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            FindObjectOfType<GameManager>().Restart();
+        }
+        
+    }
+    public void LoadNextLevel()
+    {
+        
     }
 }

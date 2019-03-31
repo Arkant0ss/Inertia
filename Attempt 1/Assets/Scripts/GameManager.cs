@@ -11,21 +11,48 @@ public class GameManager : MonoBehaviour
 
     public Transform player;
     public Text highScore;
-    //private Vector3 defPos = new Vector3(0f,1f,0f);
-
+    public Text timerText;
+    private bool timeractive;
+    public float timer;
+ 
     void Start()
     {
+        timeractive = FindObjectOfType<TimeKeeper>().timeTrial;
+        Debug.Log(timeractive);
+        Debug.Log("Test");
         if (SceneManager.GetActiveScene().name == "Endless")
         {
             highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
-        } else
+        }
+        else if (timeractive == true)
+        {
+            highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
+        }
+        else
         {
             highScore.text = "";
         }
-            
     }
+    void Update()
+    {
+        if (timeractive == true)
+        {
+            timer = Time.timeSinceLevelLoad;
+            timerText.text = timer.ToString();
+        }
+        else
+        {
+            timerText.text = "";
+        }
+    }
+
     public void CompleteLevel()
     {
+        if (timeractive == true)
+        {
+            BestTime();
+        }
+            
         completeLevelUI.SetActive(true);
     }
     public void loselife()
@@ -38,23 +65,34 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             Debug.Log("Game Over");
-            
-            int currentScore = (int) player.position.z;
+                      
             if (SceneManager.GetActiveScene().name == "Endless")
             {
-                if (currentScore > PlayerPrefs.GetInt("HighScore", 0))
-                {
-                    PlayerPrefs.SetInt("HighScore", currentScore);
-                    highScore.text = currentScore.ToString();
-                    Debug.Log(currentScore.ToString());
-                }
+                ScoreKeeper(); 
             }
-            Invoke("Restart", restartDelay - 1); //reminder to change this later
-
-            
-           
+            Invoke("Restart", restartDelay - 1); //reminder to change this later           
         }
             
+    }
+    public void ScoreKeeper()
+    {
+        int currentScore = (int)player.position.z;
+        if (currentScore > PlayerPrefs.GetInt("HighScore", 0))
+        {
+            PlayerPrefs.SetInt("HighScore", currentScore);
+            highScore.text = currentScore.ToString();
+            Debug.Log(currentScore.ToString());
+        }
+    }
+    public void BestTime()
+    {
+        float currentScore = timer;
+        if (currentScore < PlayerPrefs.GetFloat("TopTime", 100f))
+        {
+            PlayerPrefs.SetFloat("TopTime", currentScore);
+            highScore.text = currentScore.ToString();
+            Debug.Log(currentScore.ToString());
+        }
     }
     public void BackToMenu()
     {

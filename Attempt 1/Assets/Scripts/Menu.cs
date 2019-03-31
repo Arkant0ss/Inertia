@@ -6,8 +6,7 @@ public class Menu : MonoBehaviour
     public GameObject menuscreen;
     public GameObject hofscreen;
     public GameObject levelscreen;
-
-
+    
     public void Play()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
