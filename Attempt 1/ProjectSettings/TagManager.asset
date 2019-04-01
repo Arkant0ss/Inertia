@@ -8,6 +8,7 @@ TagManager:
   - Spawner
   - Boss
   - Henchmen
+  - TimeKeeper
   layers:
   - Default
   - TransparentFX

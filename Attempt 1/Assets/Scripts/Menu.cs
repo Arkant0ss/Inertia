@@ -6,8 +6,7 @@ public class Menu : MonoBehaviour
     public GameObject menuscreen;
     public GameObject hofscreen;
     public GameObject levelscreen;
-
-
+    
     public void Play()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -16,7 +15,7 @@ public class Menu : MonoBehaviour
     {
         hofscreen.SetActive(true);
         menuscreen.SetActive(false);
-        Debug.Log("Quit");
+        
     }
     public void MenuScreen()
     {
@@ -38,6 +37,8 @@ public class Menu : MonoBehaviour
     public void TutortialChooser() // make this better later
     {
         SceneManager.LoadScene(1);
+        //SceneManager.LoadScene(gameObject.name);
+        //Debug.Log(gameObject.name);
     }
     public void Level1Chooser()
     {

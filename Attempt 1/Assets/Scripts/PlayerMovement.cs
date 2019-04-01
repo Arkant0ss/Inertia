@@ -56,6 +56,17 @@ public class PlayerMovement : MonoBehaviour
             FindObjectOfType<GameManager>().Restart();
 
        }
+       if (Input.GetKey("t"))
+       {
+           FindObjectOfType<TimeKeeper>().TimerOn();
+
+       }
+       if (Input.GetKey("o"))
+       {
+           FindObjectOfType<TimeKeeper>().TimerOn();
+
+       }
+
 
 
         //if (Input.GetKey("s"))
