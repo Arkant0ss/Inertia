@@ -10,25 +10,33 @@ public class TimeKeeper : MonoBehaviour
 
     public void TimerOn()
     {
-        var objects = GameObject.FindGameObjectsWithTag("TimeKeeper");
+        //var objects = GameObject.FindGameObjectsWithTag("TimeKeeper");
+        if (timeTrial == false)
+        {
+            timeTrial = true;
+
+            //foreach (var obj in objects)
+            //{
+            //    obj.GetComponent<TimeKeeper>().timeTrial = false;
+            //}
+        }
+        //else
+        //{
+        //    timeTrial = true;
+        //    //foreach (var obj in objects)
+        //    //{
+        //    //    obj.GetComponent<TimeKeeper>().timeTrial = true;
+        //    //}
+        //}
+        Debug.Log(timeTrial);
+    }
+    public void TimerOff()
+    {
         if (timeTrial == true)
         {
             timeTrial = false;
-
-            foreach (var obj in objects)
-            {
-                obj.GetComponent<TimeKeeper>().timeTrial = false;
-            }
-        }
-        else
-        {
-            timeTrial = true;
-            foreach (var obj in objects)
-            {
-                obj.GetComponent<TimeKeeper>().timeTrial = true;
-            }
         }
         Debug.Log(timeTrial);
-    }
 
+    }
 }

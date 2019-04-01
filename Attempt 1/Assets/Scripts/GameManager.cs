@@ -17,17 +17,14 @@ public class GameManager : MonoBehaviour
  
     void Start()
     {
-        timeractive = FindObjectOfType<TimeKeeper>().timeTrial;
-        Debug.Log(timeractive);
-        Debug.Log("Test");
         if (SceneManager.GetActiveScene().name == "Endless")
         {
             highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         }
-        else if (timeractive == true)
-        {
-            highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
-        }
+        //else if (timeractive == true)
+        //{
+        //    highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
+        //}
         else
         {
             highScore.text = "";
@@ -35,10 +32,11 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if (timeractive == true)
+        if (FindObjectOfType<TimeKeeper>().timeTrial == true)
         {
             timer = Time.timeSinceLevelLoad;
             timerText.text = timer.ToString();
+            highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
         }
         else
         {
