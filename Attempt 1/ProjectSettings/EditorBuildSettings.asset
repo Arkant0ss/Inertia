@@ -8,12 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/__DELETED_GUID_Trash/1002758431ac8774ebe9cac49326185a
+    guid: 1002758431ac8774ebe9cac49326185a
+  - enabled: 0
+    path: Assets/Scenes/SamTest2.unity
+    guid: e32ca48ae8adfc240aeac55e9c35d6b8
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 1938f92cc0695e64087c21669ad8b9a5
   - enabled: 1
-    path: Assets/Scenes/SamTest2.unity
-    guid: e32ca48ae8adfc240aeac55e9c35d6b8
+    path: Assets/Scenes/Tutorial.unity
+    guid: a9f50cb3d2e5d2545816db1cb9f375a6
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 32a26d42433b0f84a927c7922016938c
@@ -25,12 +31,15 @@ EditorBuildSettings:
     guid: 93807cd07d809e944af4f9670b2abdc1
   - enabled: 1
     path: Assets/Scenes/Level4.unity
-    guid: 1002758431ac8774ebe9cac49326185a
+    guid: 4b1f79c53ca930947b484416ffe6d3f2
   - enabled: 1
     path: Assets/Scenes/Level5.unity
-    guid: 2a6473bfd3061a748812385fdb370383
+    guid: e70924e3f6b523b4b8a8709a7e4543df
   - enabled: 1
     path: Assets/Scenes/Level6.unity
+    guid: 2a6473bfd3061a748812385fdb370383
+  - enabled: 1
+    path: Assets/Scenes/Level7.unity
     guid: 10d1097603c70d94db2f98ea99e5e8db
   - enabled: 1
     path: Assets/Scenes/BossFight.unity

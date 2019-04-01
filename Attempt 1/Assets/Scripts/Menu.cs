@@ -67,15 +67,20 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(7);
 
     }
-    public void BossfightChooser()
+    public void Level7Chooser()
     {
         SceneManager.LoadScene(8);
+
+    }
+    public void BossfightChooser()
+    {
+        SceneManager.LoadScene(9);
 
     }
 
     public void EndlessChooser() //must fix this
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
 
     }
 

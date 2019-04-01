@@ -14,6 +14,7 @@ public class TimeKeeper : MonoBehaviour
         if (timeTrial == false)
         {
             timeTrial = true;
+            FindObjectOfType<TimeKeeper>().timeTrial = true;
 
             //foreach (var obj in objects)
             //{
@@ -35,6 +36,7 @@ public class TimeKeeper : MonoBehaviour
         if (timeTrial == true)
         {
             timeTrial = false;
+            FindObjectOfType<TimeKeeper>().timeTrial = false;
         }
         Debug.Log(timeTrial);
 

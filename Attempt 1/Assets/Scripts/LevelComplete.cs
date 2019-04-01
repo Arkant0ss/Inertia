@@ -14,6 +14,7 @@ public class LevelComplete : MonoBehaviour
         else
         {
             FindObjectOfType<GameManager>().Restart();
+            FindObjectOfType<TimeKeeper>().TimerOn();
         }
         
     }

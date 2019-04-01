@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4231,7 +4231,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1915482117}
-        m_MethodName: Level6Chooser
+        m_MethodName: Level7Chooser
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5651,8 +5651,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 508.59985, y: 102.9}
-  m_SizeDelta: {x: 821.3, y: 496.9}
+  m_AnchoredPosition: {x: 533.6, y: 59}
+  m_SizeDelta: {x: 821.3, y: 630}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1618881015
 MonoBehaviour:
@@ -5698,6 +5698,8 @@ MonoBehaviour:
     -When skipping on platforms, speed is key to keeping momentum and to avoid dropping
 
     -In bossfight you must collide with all the reds in order to win
+
+    -Use time trial to earn a spot on the Hall of Fame
 
 
 
@@ -5906,8 +5908,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -316.67, y: -9.9}
-  m_SizeDelta: {x: 813.3, y: 722.9}
+  m_AnchoredPosition: {x: -296.2, y: 19}
+  m_SizeDelta: {x: 838.3, y: 797.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1701279416
 MonoBehaviour:
@@ -5944,7 +5946,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\t\t\t\t\tHow To Play:\nControls\nW, A, D to move\nM to go back to menu\nL
     to shrink (easy mode)\nR to restart\nT to turn on time trial\nO to turn off time
-    trial\n\n"
+    trial\nP to reset best time(temporary fix)\n\n"
 --- !u!222 &1701279417
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6466,7 +6468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.56259394, b: 1, a: 1}
+  m_Color: {r: 0.75147724, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

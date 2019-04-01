@@ -12,11 +12,15 @@ public class GameManager : MonoBehaviour
     public Transform player;
     public Text highScore;
     public Text timerText;
-    private bool timeractive;
+    //private bool timeractive;
     public float timer;
  
     void Start()
     {
+        if (PlayerPrefs.GetString("On", "Off") == "On")
+        {
+            FindObjectOfType<TimeKeeper>().TimerOn();
+        }        
         if (SceneManager.GetActiveScene().name == "Endless")
         {
             highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
@@ -25,10 +29,6 @@ public class GameManager : MonoBehaviour
         //{
         //    highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
         //}
-        else
-        {
-            highScore.text = "";
-        }
     }
     void Update()
     {
@@ -37,16 +37,19 @@ public class GameManager : MonoBehaviour
             timer = Time.timeSinceLevelLoad;
             timerText.text = timer.ToString();
             highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
+            PlayerPrefs.SetString("On", "Off");
         }
         else
         {
+ 
             timerText.text = "";
+            highScore.text = "";
         }
     }
 
     public void CompleteLevel()
     {
-        if (timeractive == true)
+        if (FindObjectOfType<TimeKeeper>().timeTrial == true)
         {
             BestTime();
         }
@@ -85,7 +88,7 @@ public class GameManager : MonoBehaviour
     public void BestTime()
     {
         float currentScore = timer;
-        if (currentScore < PlayerPrefs.GetFloat("TopTime", 100f))
+        if (currentScore < PlayerPrefs.GetFloat("TopTime", 1000f))
         {
             PlayerPrefs.SetFloat("TopTime", currentScore);
             highScore.text = currentScore.ToString();
@@ -104,6 +107,14 @@ public class GameManager : MonoBehaviour
    
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if (FindObjectOfType<TimeKeeper>().timeTrial == true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            FindObjectOfType<TimeKeeper>().TimerOn();
+        }
+        else
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }
