@@ -1067,7 +1067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 55}
+  m_AnchoredPosition: {x: -200, y: 55}
   m_SizeDelta: {x: 356.2, y: 817.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &264320068
@@ -1092,7 +1092,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -1119,6 +1119,8 @@ MonoBehaviour:
     6
 
     7
+
+    Bossfight
 
     Overall
 
@@ -1596,6 +1598,122 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463420979}
   m_CullTransparentMesh: 0
+--- !u!1 &478760402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 478760403}
+  - component: {fileID: 478760405}
+  - component: {fileID: 478760404}
+  - component: {fileID: 478760406}
+  m_Layer: 5
+  m_Name: Yourtime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &478760403
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478760402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1766047114}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 750, y: 55}
+  m_SizeDelta: {x: 356.2, y: 821.3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &478760404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478760402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 60
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 200
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'YourTime
+
+
+    0 sec
+
+    0 sec
+
+    0 sec
+
+    0 sec
+
+    0 sec
+
+    0 sec
+
+    0 sec
+
+    0 sec
+
+    0 min
+
+    0
+
+'
+--- !u!222 &478760405
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478760402}
+  m_CullTransparentMesh: 0
+--- !u!114 &478760406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478760402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2374ef6e162cc45448102c395f849d88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yourtimes: {fileID: 478760404}
 --- !u!224 &495180861 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2203435741188600831, guid: 6fe4a8db8e8691f4ba1531ffe127fbb5,
@@ -2696,7 +2814,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: 55}
+  m_AnchoredPosition: {x: 300, y: 55}
   m_SizeDelta: {x: 356.2, y: 821.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &721989679
@@ -2721,7 +2839,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -2732,8 +2850,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Time
+  m_Text: 'BestTime
 
+
+    0 sec
 
     0 sec
 
@@ -3667,7 +3787,7 @@ RectTransform:
   m_Children:
   - {fileID: 911882715}
   m_Father: {fileID: 1766047114}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5001,7 +5121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -495.4, y: 55}
+  m_AnchoredPosition: {x: -700, y: 55}
   m_SizeDelta: {x: 351.7, y: 819.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1461264816
@@ -5026,7 +5146,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_FontSize: 60
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -5039,6 +5159,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Player
 
+
+    ---
 
     ---
 
@@ -5946,7 +6068,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "\t\t\t\t\tHow To Play:\nControls\nW, A, D to move\nM to go back to menu\nL
     to shrink (easy mode)\nR to restart\nT to turn on time trial\nO to turn off time
-    trial\nP to reset best time(temporary fix)\n\n"
+    trial\nP to reset best times (use with caution)\n\n"
 --- !u!222 &1701279417
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6221,6 +6343,7 @@ RectTransform:
   - {fileID: 1461264815}
   - {fileID: 264320067}
   - {fileID: 721989678}
+  - {fileID: 478760403}
   - {fileID: 983065058}
   m_Father: {fileID: 1598910321}
   m_RootOrder: 2

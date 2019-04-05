@@ -59,13 +59,15 @@ public class PlayerMovement : MonoBehaviour
        if (Input.GetKey("t"))
        {
            FindObjectOfType<TimeKeeper>().TimerOn();
+            PlayerPrefs.SetString("TimerActive", "On");
 
-       }
+        }
        if (Input.GetKey("o"))
        {
            FindObjectOfType<TimeKeeper>().TimerOff();
+            PlayerPrefs.SetString("TimerActive", "NotOn");
 
-       }
+        }
 
 
 

@@ -13,6 +13,7 @@ public class LevelComplete : MonoBehaviour
         }
         else
         {
+            Invoke("LoadNextLevel", 3f);
             FindObjectOfType<GameManager>().Restart();
             FindObjectOfType<TimeKeeper>().TimerOn();
         }

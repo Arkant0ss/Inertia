@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.3584906, g: 0.34665364, b: 0.34665364, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.11
+  m_FogDensity: 0.07
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.009055446, g: 0, b: 0.009055446, a: 1}
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0
+  m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1382,14 +1382,14 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 124591870}
-    - target: {fileID: 2644090266867671861, guid: 54066ae77cb298747b73979adec892b5,
-        type: 3}
-      propertyPath: m_Name
-      value: 05
-      objectReference: {fileID: 0}
     - target: {fileID: 2644090266867671863, guid: 54066ae77cb298747b73979adec892b5,
         type: 3}
       propertyPath: m_Text
+      value: 05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2644090266867671861, guid: 54066ae77cb298747b73979adec892b5,
+        type: 3}
+      propertyPath: m_Name
       value: 05
       objectReference: {fileID: 0}
     m_RemovedComponents: []

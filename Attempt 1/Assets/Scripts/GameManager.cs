@@ -17,16 +17,17 @@ public class GameManager : MonoBehaviour
  
     void Start()
     {
-        if (PlayerPrefs.GetString("On", "Off") == "On")
+        if (PlayerPrefs.GetString("TimerActive", "Off") == "On")
         {
             FindObjectOfType<TimeKeeper>().TimerOn();
+            highScore.text = PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name, 0f).ToString();
         }        
         if (SceneManager.GetActiveScene().name == "Endless")
         {
             highScore.text = PlayerPrefs.GetInt("HighScore", 0).ToString();
         }
         //else if (timeractive == true)
-        //{
+        //
         //    highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
         //}
     }
@@ -36,8 +37,6 @@ public class GameManager : MonoBehaviour
         {
             timer = Time.timeSinceLevelLoad;
             timerText.text = timer.ToString();
-            highScore.text = PlayerPrefs.GetFloat("TopTime", 0f).ToString();
-            PlayerPrefs.SetString("On", "Off");
         }
         else
         {
@@ -88,9 +87,9 @@ public class GameManager : MonoBehaviour
     public void BestTime()
     {
         float currentScore = timer;
-        if (currentScore < PlayerPrefs.GetFloat("TopTime", 1000f))
+        if (currentScore < PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name, 10000f))
         {
-            PlayerPrefs.SetFloat("TopTime", currentScore);
+            PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name, currentScore);
             highScore.text = currentScore.ToString();
             Debug.Log(currentScore.ToString());
         }
