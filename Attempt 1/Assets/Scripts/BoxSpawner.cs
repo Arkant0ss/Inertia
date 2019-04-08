@@ -22,12 +22,20 @@ public class BoxSpawner : MonoBehaviour
     public float zincrementer;
     Vector3 rotationchanger = new Vector3();
 
-    void Start()
+     void OnEnable()
     {
         rotationchanger.x = xcoordinate;
         rotationchanger.y = ycoordinate;
         rotationchanger.z = zcoordinate;
-        InvokeRepeating("BeginSpawning", 1f, spawnspeed); 
+        if (spawnspeed == 0f)
+        {
+            Invoke("BeginSpawning", 0f);
+        }
+        else
+        {
+            InvokeRepeating("BeginSpawning", 1f, spawnspeed);
+        }
+        
     }
 
     public void BeginSpawning()

@@ -8,7 +8,7 @@ public class SpawnerCollision : MonoBehaviour
     public GameManager gameManager;
     void OnTriggerEnter(Collider triggerInfo)
     {
-        if (triggerInfo.tag == "Player")
+        if (triggerInfo.tag == "Player" || triggerInfo.tag == "PlayerShot")
         {
             if (gameObject.tag == "Henchmen")
             {
@@ -18,11 +18,19 @@ public class SpawnerCollision : MonoBehaviour
             {
                 gameManager.CompleteLevel();
             }
-            if (gameObject.tag == "Boss" && gameManager.bosslives != 0)
+            if (gameObject.tag == "Boss" && gameManager.bosslives != 0 && triggerInfo.tag == "Player")
             {
                 gameManager.EndGame(); //need to fix this to say something better
             }
-            gameObject.SetActive(false);
+            if (gameObject.tag == "Boss" && gameManager.bosslives != 0 && triggerInfo.tag == "PlayerShot")
+            {
+                //to prevent people from accidentially killing the boss
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
+            
             
         }
 

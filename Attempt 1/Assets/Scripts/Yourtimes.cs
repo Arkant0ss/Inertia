@@ -11,8 +11,8 @@ public class Yourtimes : MonoBehaviour
     {
         yourtimes.text = "Your Times \n \n" + PlayerPrefs.GetFloat("Level1", 0f) + " sec \n" + PlayerPrefs.GetFloat("Level2", 0f) + " sec \n" 
             + PlayerPrefs.GetFloat("Level3", 0f) + " sec \n" + PlayerPrefs.GetFloat("Level4", 0f) + " sec \n" + PlayerPrefs.GetFloat("Level5", 0f) + 
-            " sec \n" + PlayerPrefs.GetFloat("Level6", 0f) + " sec \n" + PlayerPrefs.GetFloat("Level7", 0f) + " sec \n" + PlayerPrefs.GetFloat("BossFight", 0f)
-            + " sec \n" + PlayerPrefs.GetFloat("Overall", 0f) + " sec \n" + PlayerPrefs.GetFloat("HighScore", 0000f);
+            " sec \n" + PlayerPrefs.GetFloat("Level6", 0f) + " sec \n" + PlayerPrefs.GetFloat("Level7", 0f) + " sec \n" + PlayerPrefs.GetFloat("Level8", 0f) + " sec \n" + PlayerPrefs.GetFloat("BossFight", 0f)
+            + " sec \n" + PlayerPrefs.GetFloat("Shooter", 0f) + " sec \n" + PlayerPrefs.GetFloat("Overall", 0f) + " sec \n" + PlayerPrefs.GetFloat("HighScore", 0000f);
     }
 
 

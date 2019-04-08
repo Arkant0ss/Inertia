@@ -9,11 +9,8 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/__DELETED_GUID_Trash/1002758431ac8774ebe9cac49326185a
-    guid: 1002758431ac8774ebe9cac49326185a
-  - enabled: 0
-    path: Assets/Scenes/SamTest2.unity
-    guid: e32ca48ae8adfc240aeac55e9c35d6b8
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 1938f92cc0695e64087c21669ad8b9a5
@@ -37,9 +34,12 @@ EditorBuildSettings:
     guid: e70924e3f6b523b4b8a8709a7e4543df
   - enabled: 1
     path: Assets/Scenes/Level6.unity
-    guid: 2a6473bfd3061a748812385fdb370383
+    guid: e32ca48ae8adfc240aeac55e9c35d6b8
   - enabled: 1
     path: Assets/Scenes/Level7.unity
+    guid: 2a6473bfd3061a748812385fdb370383
+  - enabled: 1
+    path: Assets/Scenes/Level8.unity
     guid: 10d1097603c70d94db2f98ea99e5e8db
   - enabled: 1
     path: Assets/Scenes/BossFight.unity
@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Endless.unity
     guid: 457506d2ce3981441ac9231823088495
+  - enabled: 1
+    path: Assets/Scenes/Shooter.unity
+    guid: c3f0d3b2e5ef520478c825f526c2ef9b
   m_configObjects: {}
