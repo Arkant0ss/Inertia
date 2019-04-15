@@ -6,51 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 1938f92cc0695e64087c21669ad8b9a5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tutorial.unity
     guid: a9f50cb3d2e5d2545816db1cb9f375a6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level1.unity
     guid: 32a26d42433b0f84a927c7922016938c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: 24c423988f1b92947baf87b69be411cd
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level3.unity
     guid: 93807cd07d809e944af4f9670b2abdc1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level4.unity
     guid: 4b1f79c53ca930947b484416ffe6d3f2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level5.unity
     guid: e70924e3f6b523b4b8a8709a7e4543df
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level6.unity
     guid: e32ca48ae8adfc240aeac55e9c35d6b8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level7.unity
     guid: 2a6473bfd3061a748812385fdb370383
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level8.unity
     guid: 10d1097603c70d94db2f98ea99e5e8db
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BossFight.unity
     guid: 748adf90c0bf99c4bb1d9b29336786b7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Credits.unity
     guid: 0365dd46e2fa56442bdbbfa367039fb6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Endless.unity
     guid: 457506d2ce3981441ac9231823088495
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Shooter.unity
     guid: c3f0d3b2e5ef520478c825f526c2ef9b
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerTest.unity
+    guid: 4e8d06ca68fbf5a488e94d73b2e7cf88
   m_configObjects: {}
