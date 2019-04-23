@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3759685277908532152}
   - component: {fileID: 2838092433156362626}
   - component: {fileID: 3261994739318546141}
+  - component: {fileID: 3812925316417788901}
   m_Layer: 0
   m_Name: MultiPlayerShots
   m_TagString: PlayerShot
@@ -107,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba69d0a30df48242b19a615c1740c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 20
+  movementSpeed: 30
 --- !u!54 &3759685277908532152
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -179,3 +180,16 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+--- !u!114 &3812925316417788901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4967016613241462857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ff1f939942c7242a6c661d75f7cc32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletdamage: 4

@@ -6,14 +6,20 @@ public class MultiplayerMovement : MonoBehaviour
     public Rigidbody rb;
     public float forwardForce;
     public float sidewaysForce;
-    private GameObject person; //This was to avoid continuity errors
+    private GameObject person;
+    private string teamname;
     private void OnEnable()
     {
-        Debug.Log(player.rotation.y);
+        Debug.Log(player.rotation.y); //need to fix which side you spawn on
         if (player.rotation.y == 1f)
         {
             sidewaysForce = -sidewaysForce;
             forwardForce = -forwardForce;
+            teamname = "South";
+        }
+        else
+        {
+            teamname = "North";
         }
     }
 

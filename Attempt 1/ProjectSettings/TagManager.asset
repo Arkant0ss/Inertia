@@ -10,6 +10,8 @@ TagManager:
   - Henchmen
   - TimeKeeper
   - PlayerShot
+  - South
+  - North
   layers:
   - Default
   - TransparentFX

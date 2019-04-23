@@ -5,20 +5,21 @@ using UnityEngine.UI;
 
 public class MultiTrigger : MonoBehaviour
 {
-    public MultiShooter playershooting;
+    public MultiShooter playershooting; //currently not using this script, look for multishooter
     public float ammocount = 5f;
     private float ammoleft;
     private bool reloading = false;
     private int reloadstarttimer = 0;
     public int reloadtime = 0;
-    private Text ammotext;
+    public Text ammotext;
+    public SimpleHealthBar ammoBar;
 
     private void Start()
     {
         ammoleft = ammocount;
-        ammotext = GameObject.Find("Ammotext").GetComponent<Text>();
+        //ammotext = GameObject.Find("Ammotext").GetComponent<Text>();
     }
-    private void FixedUpdate()
+    private void Update()
     {
         if(reloading == true)
         {
@@ -27,6 +28,7 @@ public class MultiTrigger : MonoBehaviour
                 reloading = false;
                 ammoleft = ammocount;
                 ammotext.text = ammoleft.ToString();
+                ammoBar.UpdateBar(ammoleft, ammocount);
             }
         }
         if (Input.GetKey("space") && reloading == false)
@@ -35,6 +37,7 @@ public class MultiTrigger : MonoBehaviour
             {
                 ammoleft = ammoleft - 1f;
                 ammotext.text = ammoleft.ToString();
+                ammoBar.UpdateBar(ammoleft, ammocount);
             }
             playershooting.enabled = true;
             
